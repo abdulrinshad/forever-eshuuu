@@ -92,25 +92,31 @@ img.love-photo {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.8rem;
+  body {
+    background: radial-gradient(circle at center, #ffdde1 30%, #ee9ca7 70%);
+    padding-top: 30px;
   }
 
-   img.love-photo {
-    width: 90%;         /* Make it bigger (90% of screen) */
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;  /* Center it */
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
   }
+
+  .container {
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+  }
+
   input {
-    width: 100rem;
-    font-size: 2rem;
-    padding: 14px;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 16px;
   }
 
   button {
-    font-size: 1.4rem;
-    padding: 14px 24px;
+    font-size: 1.5rem;
+    padding: 16px 28px;
   }
 
   .heart-meter {
@@ -128,6 +134,12 @@ img.love-photo {
   }
 
   .ai-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  img.love-photo {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
   }
 }
