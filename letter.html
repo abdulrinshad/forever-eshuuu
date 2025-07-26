@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Letter For You 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://i.imgur.com/tCTsG7B.jpg') center/cover no-repeat;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Cinzel', serif;
+      color: #4b2e2e;
+    }
+
+    .scroll-wrapper {
+      background: url('https://i.imgur.com/X8SShWs.png') center/contain no-repeat;
+      background-size: 100% 100%;
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 60px 40px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      animation: unroll 2.5s ease-out;
+    }
+
+    @keyframes unroll {
+      0% { transform: scaleY(0); opacity: 0; }
+      100% { transform: scaleY(1); opacity: 1; }
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #8B0000;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn-invite {
+      padding: 12px 30px;
+      background: #cfa75c;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-invite:hover {
+      transform: scale(1.05);
+      background: #d4b06d;
+    }
+     .btn-invite {
+    background: linear-gradient(to right, #f7e1a0, #fbd786);
+    color: #5c3b1e;
+    font-family: 'Papyrus', fantasy;
+    border: 2px solid #d4a762;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 18px;
+    box-shadow: 0 0 15px rgba(255, 223, 154, 0.7);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .btn-invite:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ffe7c1, #ffddb0);
+  }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-wrapper">
+    <h2>🌹 A Whisper from the Heart 🌹</h2>
+    <p>
+      Dear Princess,
+    </p>
+    <p>
+      Like Aladdin holding out a hand with hope in his eyes, I come with a heart full of dreams.  
+      Every smile of yours feels like magic dust, and every word like a song from a fairytale. ✨  
+    </p>
+    <p>
+      I don’t have a flying carpet (yet 😅), but I do have something better — a heart that believes you're rare,  
+      like a genie’s wish come true. 💖  
+    </p>
+    <p>
+      Would you care to join me on a little magical journey? Just you and me — stars above, laughter between,  
+      and memories waiting to be made. 🌌
+    </p>
+    <p>
+      I’m not offering you a palace. Just my time, my honesty, and a place in my life where you’ll always be treated like royalty. 👑  
+    </p>
+
+    <p class="heart">💕 Yours in stardust, <br> Rinshad</p>
+
+    <div style="text-align:center;">
+
+    <div class="btn-container">
+      <button class="btn-invite" onclick="invite()">🌙 Say yes to my magical date</button>
+    </div>
+  </div>
+
+ <script>
+  function invite() {
+    Swal.fire({
+      title: "💖 Yes, I am ready!",
+      text: "Let the stars witness our first magical step together. 🌙✨",
+      icon: "success",
+      confirmButtonText: "Take me to you 💌"
+    }).then(() => {
+      // Redirect her to your Instagram DM
+      window.location.href = "https://www.instagram.com/__rin__shaad__/#";  // replace with yours
+    });
+  }
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

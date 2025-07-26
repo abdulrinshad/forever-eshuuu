@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle, #ffdde1, #ee9ca7);
+  text-align: center;
+  padding-top: 50px;
+  color: #4a004a;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.heart-meter {
+  margin-top: 30px;
+  position: relative;
+  width: 80%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffd6e0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#heart-fill {
+  background: linear-gradient(to right, #ff69b4, #ff1493);
+  width: 0%;
+  height: 100%;
+  transition: 2s;
+}
+
+#percent-text {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.scanner {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 5px dashed #ff1493;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+/* Default styling (for larger screens) */
+img.love-photo {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.ai-text {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+   img.love-photo {
+    width: 90%;         /* Make it bigger (90% of screen) */
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;  /* Center it */
+  }
+  input {
+    width: 100rem;
+    font-size: 2rem;
+    padding: 14px;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 14px 24px;
+  }
+
+  .heart-meter {
+    height: 40px;
+  }
+
+  #percent-text {
+    font-size: 1.6rem;
+  }
+
+  .scanner {
+    width: 120px;
+    height: 120px;
+    border-width: 6px;
+  }
+
+  .ai-text {
+    font-size: 1.2rem;
+  }
+}

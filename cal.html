@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SoulSync 💖 Love Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>💘 SoulSync AI Love Calculator 💘</h1>
+  <div class="scanner"></div>
+
+  <div class="form">
+    <input type="text" id="name1" placeholder="Your Name">
+    <input type="text" id="name2" placeholder="Crush's Name">
+    <button onclick="calculateLove()">🔮 Calculate Love</button>
+  </div>
+
+  <div class="heart-meter">
+    <div id="heart-fill"></div>
+    <p id="percent-text">0%</p>
+  </div>
+
+  <p class="ai-text" id="ai-text">Waiting for input...</p>
+</div>
+
+<audio id="romanticMusic" src="https://cdn.pixabay.com/download/audio/2022/10/28/audio_fef386a1ca.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
