@@ -30,7 +30,6 @@ function calculateLove() {
 
       if (lovePercent < 10) lovePercent = Math.floor(Math.random() * 10);
     }
-    
 
     // Animate heart meter up to the calculated percent
     let current = 0;
@@ -62,7 +61,13 @@ function calculateLove() {
             You’re destined to be together under the stars ✨<br><br>
             <i>“A timeless love story begins...”</i>`,
           icon: "success",
-          confirmButtonText: "💘 Begin Your Story"
+          confirmButtonText: "💘 Begin Your Story",
+          customClass: {
+            popup: 'custom-swal-popup',
+            title: 'custom-swal-title',
+            htmlContainer: 'custom-swal-html',
+            confirmButton: 'custom-swal-button'
+          }
         }).then(() => {
           const query = new URLSearchParams({
             name1: capitalize(name1),
@@ -71,13 +76,22 @@ function calculateLove() {
           });
           window.location.href = `story.html?${query.toString()}`;
         });
+
       } else {
         Swal.fire({
           title: "💔 Compatibility Check",
           html: `
-            ${capitalize(name1)} and ${capitalize(name2)} share ${lovePercent}% connection.<br>
-            Keep trying, love grows with time 🌱`,
-          icon: "info"
+            <div style="font-size: 1.3rem;">
+              ${capitalize(name1)} and ${capitalize(name2)} share ${lovePercent}% connection.<br>
+              Keep trying, love grows with time 🌱
+            </div>`,
+          icon: "info",
+          customClass: {
+            popup: 'custom-swal-popup',
+            title: 'custom-swal-title',
+            htmlContainer: 'custom-swal-html',
+            confirmButton: 'custom-swal-button'
+          }
         });
       }
     }, 3500); // Show SweetAlert after animation
