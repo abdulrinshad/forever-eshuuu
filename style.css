@@ -101,7 +101,7 @@ img.love-photo {
 }
 
 .custom-swal-button {
-  font-size: 1.1rem !important;
+  font-size: 1.8rem !important;
   padding: 10px 25px !important;
   border-radius: 8px;
   background-color: #ff69b4 !important;
@@ -147,14 +147,15 @@ img.love-photo {
 
   .custom-swal-html {
     font-size: 2rem !important;
+    line-height: 1.6;
   }
 
-  .custom-swal-button {
-  font-size: 20px;        /* Bigger text */
-  padding: 14px 28px;     /* Bigger button space */
-  border-radius: 10px;    /* Rounded corners */
-  font-weight: bold;
-}
+    .custom-swal-button {
+     font-size: 1.5rem !important; /* Increase this as needed */
+    height: 85px;
+    width: 20rem;
+  }
+
 
   /* 1. Make popup taller (up to blue line) */
 .swal2-popup {
