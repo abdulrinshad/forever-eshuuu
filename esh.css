@@ -508,7 +508,8 @@ body {
   .bgimg {
     height: auto;
     padding: 150px 10px 40px;
-    height: 58rem;
+    height: 53rem;
+    width: 28rem;
     flex-direction: column;
     background-position: top;
   }
