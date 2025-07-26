@@ -13,14 +13,17 @@ function calculateLove() {
   setTimeout(() => {
     let lovePercent = 0;
     let isPerfectMatch = false;
+  if (
+  (name1 === "abdul rinshad" && name2 === "eshal gazal") ||
+  (name1 === "eshal gazal" && name2 === "abdul rinshad") ||
+  (name1 === "eshal" && name2 === "rinshad") ||
+  (name1 === "rinshad" && name2 === "eshal")
+  ) {
+  lovePercent = 94;
+  isPerfectMatch = true;
+  }
 
-    if (
-      (name1 === "abdul rinshad" && name2 === "eshal gazal") ||
-      (name1 === "eshal gazal" && name2 === "abdul rinshad")
-    ) {
-      lovePercent = 94;
-      isPerfectMatch = true;
-    } else {
+  else {
       const matchLetters = [...name1].filter(letter => name2.includes(letter)).length;
       const lenDiff = Math.abs(name1.length - name2.length);
       const vowelMatch =
