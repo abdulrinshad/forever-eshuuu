@@ -150,9 +150,11 @@ img.love-photo {
   }
 
   .custom-swal-button {
-    font-size: 2rem !important;
-    padding: 0.6rem 1.2rem !important;
-  }
+  font-size: 20px;        /* Bigger text */
+  padding: 14px 28px;     /* Bigger button space */
+  border-radius: 10px;    /* Rounded corners */
+  font-weight: bold;
+}
 
   /* 1. Make popup taller (up to blue line) */
 .swal2-popup {
